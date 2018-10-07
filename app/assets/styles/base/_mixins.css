@@ -1,0 +1,25 @@
+@define-mixin atSmall{ /*atSmall is the name of the mixin where others are default one.*/
+  @media(min-width: 530px ) {/* is going to select the screen larger than 530px */
+      @mixin-content; /* */
+    }
+}
+
+@define-mixin atMedium{
+  @media(min-width: 800px ) {
+      @mixin-content;
+    }
+}
+
+@define-mixin atLarge{
+  @media(min-width: 1200px ) {
+      @mixin-content;
+    }
+}
+
+@define-mixin clearfix{
+  &::after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+}

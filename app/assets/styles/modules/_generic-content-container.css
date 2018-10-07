@@ -1,0 +1,12 @@
+.generic-content-container{
+  p{ /* This selects any paragraph elements nested with in .generic-content-container */
+    line-height: 1.65;/* Is the width of seperatin between two lines */
+    margin: 1.8rem 0;
+    @mixin atSmall{
+      font-size: 1.125rem;
+    }
+  }
+  p a {
+    font-weight: 700;
+  }
+}
